@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import MainSource from './Components/MainSource';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ function App() {
         >
           Learn React
         </a>
+
+        <MainSource className='App-logo' name="Water Bottle" multiplier={1} />
       </header>
     </div>
   );
