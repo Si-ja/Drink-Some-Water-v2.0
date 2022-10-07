@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import '../css/Helper.css';
+
 import MainSource from "./MainSource";
 
 class MainGame extends Component<{}, {}> {
@@ -25,7 +27,9 @@ class MainGame extends Component<{}, {}> {
         // Main div to hold the game data
         return React.createElement(
             "div",
-            null,
+            {
+                className: "prevent-select"
+            },
             // The main water bottle in the game
             React.createElement(
                 MainSource,

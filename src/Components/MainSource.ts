@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+
+import bottle from '../Graphics/bottle.png'
+
+// TODO: Delete further import statements
 import logo from '../logo.svg';
 
 // Main Water Bottle of the game that can be harvested forever
@@ -50,9 +54,9 @@ class MainSource extends Component<{className: string, name: string, incrementor
             React.createElement(
                 "img",
                 {
-                    src: logo,
+                    src: bottle,
                     alt: this.name,
-                    className: this.className,
+                    className: this.className
                 },
                 null
             )
