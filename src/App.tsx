@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import MainSource from './Components/MainSource';
+import MainGame from './Components/MainGame';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           Learn React
         </a>
 
-        <MainSource className='App-logo' name="Water Bottle" multiplier={1} />
+        <MainGame />
       </header>
     </div>
   );
