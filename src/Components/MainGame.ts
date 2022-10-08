@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import '../css/Helper.css';
+import '../CSS/Helper.css';
 
 import MainSource from "./MainSource";
 
@@ -35,7 +35,7 @@ class MainGame extends Component<{}, {}> {
                 MainSource,
                 {
                     ref: this.WaterBottle,
-                    className: 'App-logo',
+                    className: 'bottle_move',
                     name: "Water Bottle",
                     incrementor: this.WaterBottleMultiplier
                 },

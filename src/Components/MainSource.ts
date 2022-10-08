@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import bottle from '../Graphics/bottle.png'
 
+import '../CSS/Logos.css';
+
 // TODO: Delete further import statements
 import logo from '../logo.svg';
 

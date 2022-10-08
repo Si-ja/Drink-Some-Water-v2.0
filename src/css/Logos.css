@@ -1,0 +1,23 @@
+.bottle_move {
+    animation: logoMovement 4s infinite ease-in-out;
+}
+
+@keyframes logoMovement {
+    50%  {transform: rotate(15deg) scale(1.2); }
+    100% {transform: rotate(0deg)  scale(1);   }
+}
+
+@-webkit-keyframes logoMovement {
+    50% {transform: rotate(15deg) scale(1.2);}
+    100% {transform: rotate(0deg) scale(1);  }
+}
+
+@-moz-keyframes logoMovement {
+    50% {transform: rotate(15deg) scale(1.2);}
+    100% {transform: rotate(0deg) scale(1);  }
+}
+
+@-ms-keyframes logoMovement {
+    50% {-webkit-transform: rotate(15deg) scale(1.2);}
+    100% {-webkit-transform: rotate(0deg) scale(1);  }
+}
