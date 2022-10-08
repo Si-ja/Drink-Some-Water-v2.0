@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
 import '../CSS/Helper.css';
+import '../CSS/Style.css';
 
 import MainSource from "./MainSource";
+import MainText from "./MainText";
 
 class MainGame extends Component<{}, {}> {
     WaterBottle: React.RefObject<MainSource>;
@@ -27,9 +29,15 @@ class MainGame extends Component<{}, {}> {
         // Main div to hold the game data
         return React.createElement(
             "div",
-            {
-                className: "prevent-select"
-            },
+            null,
+            // Intro Text
+            React.createElement(
+                MainText,
+                {
+                    className: 'mainText'
+                },
+                null
+            ),
             // The main water bottle in the game
             React.createElement(
                 MainSource,

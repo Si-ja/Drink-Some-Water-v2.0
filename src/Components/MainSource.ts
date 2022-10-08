@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import bottle from '../Graphics/bottle.png'
 
 import '../CSS/Logos.css';
+import '../CSS/Style.css';
 
 // TODO: Delete further import statements
 import logo from '../logo.svg';
@@ -44,6 +45,7 @@ class MainSource extends Component<{className: string, name: string, incrementor
         return React.createElement(
             "div",
             {
+                className: 'mainDescription',
                 onClick: this.increaseAmount
             },
             // Text notation describing the bottle and amount of items that exist after harvest
