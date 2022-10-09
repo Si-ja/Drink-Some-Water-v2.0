@@ -11,18 +11,31 @@ class MainGame extends Component<{}, {}> {
 
     WaterBottleMultiplier: number;
 
+    WaterBottleQuantity: number;
+
     constructor(props?: any) {
         super(props);
         this.WaterBottle = React.createRef();
 
         this.WaterBottleMultiplier = 1;
+        this.WaterBottleQuantity = 0;
 
         this.updateWaterBottleMultiplier = this.updateWaterBottleMultiplier.bind(this);
+        this.getWaterBottleQuantity = this.getWaterBottleQuantity.bind(this);
     }
 
     updateWaterBottleMultiplier(magnitude: number) {
         this.WaterBottleMultiplier *= magnitude;
         this.WaterBottle.current?.updateIncrementor(magnitude);
+    }
+
+    // Get the value of how many bottles have been harvested.
+    getWaterBottleQuantity() {
+        if (this.WaterBottle.current?.state.amount != null) {
+            this.WaterBottleQuantity = this.WaterBottle.current.state.amount;
+        } else {
+            this.WaterBottleQuantity = 0;
+        }
     }
 
     render() {
@@ -45,7 +58,8 @@ class MainGame extends Component<{}, {}> {
                     ref: this.WaterBottle,
                     className: 'bottle_move',
                     name: "Water Bottle",
-                    incrementor: this.WaterBottleMultiplier
+                    incrementor: this.WaterBottleMultiplier,
+                    retriever: this.getWaterBottleQuantity
                 },
                 null
             )

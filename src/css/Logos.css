@@ -1,5 +1,6 @@
 .bottle_move {
     animation: logoMovement 4s infinite ease-in-out;
+    height: auto;
 }
 
 @keyframes logoMovement {
