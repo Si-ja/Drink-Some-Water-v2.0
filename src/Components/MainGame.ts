@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 import '../CSS/Helper.css';
 import '../CSS/Style.css';
+import '../CSS/Logos.css';
 
-import MainSource from "./MainSource";
 import MainText from "./MainText";
+import MainSource from "./MainSource";
+import UpgradeGlass from "./UpgradeGlass";
 
 class MainGame extends Component<{}, {}> {
     WaterBottle: React.RefObject<MainSource>;
@@ -61,6 +63,21 @@ class MainGame extends Component<{}, {}> {
                     incrementor: this.WaterBottleMultiplier,
                     retriever: this.getWaterBottleQuantity
                 },
+                null
+            ),
+            React.createElement(
+                UpgradeGlass,
+                null,
+                null
+            ),
+            React.createElement(
+                UpgradeGlass,
+                null,
+                null
+            ),
+            React.createElement(
+                UpgradeGlass,
+                null,
                 null
             )
         );

@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 
+import '../CSS/Style.css'
+
 import bottle from '../Graphics/bottle.png'
-
-import '../CSS/Logos.css';
-import '../CSS/Style.css';
-
-// TODO: Delete further import statements
-import logo from '../logo.svg';
 
 // Main Water Bottle of the game that can be harvested forever
 class MainSource extends Component<{className: string, name: string, incrementor: number, retriever: Function}, {amount: number}> {
@@ -47,13 +43,15 @@ class MainSource extends Component<{className: string, name: string, incrementor
         return React.createElement(
             "div",
             {
-                className: 'mainDescription',
+                className: 'WaterBottleComponent',
                 onClick: this.increaseAmount
             },
             // Text notation describing the bottle and amount of items that exist after harvest
             React.createElement(
                 "h5",
-                null,
+                {
+                    className: 'mainDescription'
+                },
                 `${this.name}: ${this.state.amount}`
             ),
             // Image representing the bottle component

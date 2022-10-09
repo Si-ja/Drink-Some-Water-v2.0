@@ -1,15 +1,18 @@
+/* Gives definition to what we use as a background color and for the main font */
 body {
     font-family: 'Press Start 2P', monospace;
     font-size: 2rem;
     background-color: black;
 }
 
+/* Defines main introductory text*/
 .mainText {
     color: red;
     text-align: center;
     font-size: 1.5rem;
 }
 
+/* Gives a definition to the general text that will be used through out the game descriptions */
 .mainDescription {
     color: white;
     text-align: center;
@@ -18,3 +21,21 @@ body {
     margin-right: 15rem;
     text-align: center;
 }
+
+/* Define the position of the main Water Bottle */
+.WaterBottleComponent {
+    padding: 10rem 0;
+    width: 45%;
+    float: left;
+    height: 20rem;
+    align-items: center;
+}
+
+/* Define the position of the upgrades as divs */
+.UpgradeComponent {
+    width: 45%;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+

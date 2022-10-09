@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { addSyntheticLeadingComment } from "typescript";
 
 import '../CSS/Style.css';
 
